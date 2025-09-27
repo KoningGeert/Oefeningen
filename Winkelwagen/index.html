@@ -12,35 +12,88 @@
   <main class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6">
     <h1 class="text-2xl font-semibold mb-4">Winkelwagentje — Oefening</h1>
 
-    <!-- Productlijst -->
     <section id="product-list" class="space-y-4">
 
-      <article class="grid grid-cols-12 gap-4 items-center p-4 border rounded-lg" data-product-id="p1" data-price="12.99">
-        <div class="col-span-2">
-          <img src="https://via.placeholder.com/80" alt="Product 1" class="w-20 h-20 object-cover rounded-md">
-        </div>
-        <div class="col-span-5">
-          <h2 class="font-medium">Product 1</h2>
-          <p class="text-sm text-gray-500">Een korte omschrijving van product 1.</p>
-        </div>
-        <div class="col-span-2 text-right">
-          <div class="text-sm text-gray-600">Prijs</div>
-          <div class="font-semibold">€<span class="product-price">12.99</span></div>
-        </div>
-        <div class="col-span-2 flex items-center justify-center">
-          <div class="inline-flex items-center border rounded-md overflow-hidden">
-            <button class="px-3 py-2 decrement" aria-label="verlaag" id="decrement">−</button>
-            <span class="px-4 py-2 qty" data-qty id="qty">0</span>
-            <button class="px-3 py-2 increment" aria-label="verhoog" id="increment">+</button>
+        <!-- Product 1 -->
+        <article class="grid grid-cols-12 gap-4 items-center p-4 border rounded-lg" data-product-id="p1" data-price="12.99">
+          <div class="col-span-2">
+            <img src="https://via.placeholder.com/80" alt="Product 1" class="w-20 h-20 object-cover rounded-md">
           </div>
-        </div>
-        <div class="col-span-1 text-right">
-          <div class="text-sm text-gray-600">Subtotaal</div>
-          <div class="font-semibold">€<span class="product-subtotal">0</span></div>
-        </div>
-      </article>
-
-    </section>
+          <div class="col-span-5">
+            <h2 class="font-medium">Product 1</h2>
+            <p class="text-sm text-gray-500">Een korte omschrijving van product 1.</p>
+          </div>
+          <div class="col-span-2 text-right">
+            <div class="text-sm text-gray-600">Prijs</div>
+            <div class="font-semibold">€<span class="product-price">12.99</span></div>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <div class="inline-flex items-center border rounded-md overflow-hidden">
+              <button class="px-3 py-2 decrement" aria-label="verlaag">−</button>
+              <span class="px-4 py-2 qty" data-qty>0</span>
+              <button class="px-3 py-2 increment" aria-label="verhoog">+</button>
+            </div>
+          </div>
+          <div class="col-span-1 text-right">
+            <div class="text-sm text-gray-600">Subtotaal</div>
+            <div class="font-semibold">€<span class="product-subtotal">0</span></div>
+          </div>
+        </article>
+      
+        <!-- Product 2 -->
+        <article class="grid grid-cols-12 gap-4 items-center p-4 border rounded-lg" data-product-id="p2" data-price="8.49">
+          <div class="col-span-2">
+            <img src="https://via.placeholder.com/80" alt="Product 2" class="w-20 h-20 object-cover rounded-md">
+          </div>
+          <div class="col-span-5">
+            <h2 class="font-medium">Product 2</h2>
+            <p class="text-sm text-gray-500">Een korte omschrijving van product 2.</p>
+          </div>
+          <div class="col-span-2 text-right">
+            <div class="text-sm text-gray-600">Prijs</div>
+            <div class="font-semibold">€<span class="product-price">8.49</span></div>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <div class="inline-flex items-center border rounded-md overflow-hidden">
+              <button class="px-3 py-2 decrement" aria-label="verlaag">−</button>
+              <span class="px-4 py-2 qty" data-qty>0</span>
+              <button class="px-3 py-2 increment" aria-label="verhoog">+</button>
+            </div>
+          </div>
+          <div class="col-span-1 text-right">
+            <div class="text-sm text-gray-600">Subtotaal</div>
+            <div class="font-semibold">€<span class="product-subtotal">0</span></div>
+          </div>
+        </article>
+      
+        <!-- Product 3 -->
+        <article class="grid grid-cols-12 gap-4 items-center p-4 border rounded-lg" data-product-id="p3" data-price="5.75">
+          <div class="col-span-2">
+            <img src="https://via.placeholder.com/80" alt="Product 3" class="w-20 h-20 object-cover rounded-md">
+          </div>
+          <div class="col-span-5">
+            <h2 class="font-medium">Product 3</h2>
+            <p class="text-sm text-gray-500">Een korte omschrijving van product 3.</p>
+          </div>
+          <div class="col-span-2 text-right">
+            <div class="text-sm text-gray-600">Prijs</div>
+            <div class="font-semibold">€<span class="product-price">5.75</span></div>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <div class="inline-flex items-center border rounded-md overflow-hidden">
+              <button class="px-3 py-2 decrement" aria-label="verlaag">−</button>
+              <span class="px-4 py-2 qty" data-qty>0</span>
+              <button class="px-3 py-2 increment" aria-label="verhoog">+</button>
+            </div>
+          </div>
+          <div class="col-span-1 text-right">
+            <div class="text-sm text-gray-600">Subtotaal</div>
+            <div class="font-semibold">€<span class="product-subtotal">0</span></div>
+          </div>
+        </article>
+      
+      </section>
+      
 
     <!-- Winkelwagen summary -->
     <aside class="mt-6 border-t pt-4">

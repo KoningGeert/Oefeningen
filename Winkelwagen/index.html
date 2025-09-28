@@ -95,24 +95,56 @@
       </section>
       
 
-    <!-- Winkelwagen summary -->
-    <aside class="mt-6 border-t pt-4">
-      <div class="flex justify-between items-center">
-        <div>
-          <div class="text-sm text-gray-600">Totaal producten:</div>
-          <div class="text-lg font-medium"><span id="cart-count">3</span></div>
-        </div>
-        <div class="text-right">
-          <div class="text-sm text-gray-600">Totaal prijs</div>
-          <div class="text-2xl font-bold">€<span id="cart-total">27.99</span></div>
-        </div>
+  <!-- Winkelwagen summary -->
+<aside class="mt-6 border-t pt-4">
+    <div class="flex justify-between items-center">
+      <div>
+        <div class="text-sm text-gray-600">Totaal producten:</div>
+        <div class="text-lg font-medium"><span id="cart-count">0</span></div>
       </div>
-
-      <div class="mt-4 flex gap-2">
-        <button id="clear-cart" class="px-4 py-2 bg-red-500 text-white rounded-md">Leeg winkelwagen</button>
-        <button id="checkout" class="px-4 py-2 bg-green-600 text-white rounded-md">Afrekenen</button>
+      <div class="text-right">
+        <div class="text-sm text-gray-600">Subtotaal</div>
+        <div class="text-lg font-medium">€<span id="cart-total">0.00</span></div>
       </div>
-    </aside>
+    </div>
+  
+    <!-- Korting -->
+    <div class="mt-4 flex justify-between items-center">
+      <label for="discount-code" class="text-sm text-gray-600">Kortingscode:</label>
+      <div class="flex gap-2">
+        <input id="discount-code" type="text" class="border rounded px-2 py-1 text-sm" placeholder="Bijv. KORTING10">
+        <button id="apply-discount" class="px-3 py-1 bg-blue-600 text-white text-sm rounded">Toepassen</button>
+      </div>
+    </div>
+    <div class="flex justify-between text-sm mt-2">
+      <span>Korting</span>
+      <span>- €<span id="cart-discount">0.00</span></span>
+    </div>
+  
+    <!-- Verzendkosten -->
+    <div class="flex justify-between text-sm mt-2">
+      <span>Verzendkosten</span>
+      <span>€<span id="cart-shipping">4.95</span></span>
+    </div>
+  
+    <!-- BTW -->
+    <div class="flex justify-between text-sm mt-2">
+      <span>BTW (21%)</span>
+      <span>€<span id="cart-vat">0.00</span></span>
+    </div>
+  
+    <!-- Eindtotaal -->
+    <div class="flex justify-between items-center mt-4 border-t pt-2">
+      <span class="text-lg font-semibold">Totaal</span>
+      <span class="text-2xl font-bold">€<span id="cart-grandtotal">0.00</span></span>
+    </div>
+  
+    <div class="mt-4 flex gap-2">
+      <button id="clear-cart" class="px-4 py-2 bg-red-500 text-white rounded-md">Leeg winkelwagen</button>
+      <button id="checkout" class="px-4 py-2 bg-green-600 text-white rounded-md">Afrekenen</button>
+    </div>
+  </aside>
+  
 
     <p class="mt-4 text-sm text-gray-500">Deze HTML is klaar om van functionaliteiten te worden voorzien (JS). Stuur de functies die je wilt en ik implementeer ze.</p>
 
